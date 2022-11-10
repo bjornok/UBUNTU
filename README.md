@@ -19,7 +19,8 @@ I need to use the correct shell, running SAP DP Agent.  It works well in SUSE Li
 
 ***UPDATE***  just edited: *agentcli.sh*, *dpagent_env.sh* and *dpagent_servicedaemon.sh* - changed #/bin/sh to #/bin/bash using NANO
 
-* $SHELL --version
+`user2@dbserver2:/usr/sap/dataprovagent/bin$ $SHELL --version`
+
 ```
 user2@dbserver2:/usr/sap/dataprovagent/bin$ $SHELL --version
 GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
