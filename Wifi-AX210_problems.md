@@ -2,6 +2,9 @@
 
 BK: 2023-05-08 (fra Lauvlia 404)
 
+* [Kernel.org - Linux Wireless (iwlwifi)](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi)
+* [Kernel.org - index : kernel/git/iwlwifi/linux-firmware.git](https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/linux-firmware.git/)
+
 ### Håndtere WIFI-pci bussen
 
 For å finne hvilken PCI-port Wifi-kort er på:
@@ -109,6 +112,28 @@ parm:           disable_11ac:Disable VHT capabilities (default: false) (bool)
 parm:           remove_when_gone:Remove dev from PCIe bus if it is deemed inaccessible (default: false) (bool)
 parm:           disable_11ax:Disable HE capabilities (default: false) (bool)
 parm:           disable_11be:Disable EHT capabilities (default: false) (bool
+```
+
+***Sjekker verdier i parameterlisten ***
+
+```console
+ $ grep [[:alnum:]] /sys/module/iwlwifi/parameters/* | cut -d '/' -f6
+ grep: /sys/module/iwlwifi/parameters/enable_ini11n_disable:0
+amsdu_size:0
+bt_coex_active:Y
+disable_11ac:N
+disable_11ax:N
+disable_11be:N
+: Operation not permitted
+fw_restart:Y
+led_mode:0
+nvm_file:(null)
+power_level:0
+power_save:N
+remove_when_gone:N
+swcrypto:0
+uapsd_disable:3
+$
 ```
 
 
