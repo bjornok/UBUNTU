@@ -127,7 +127,7 @@ $ sudo dmesg
 ***Sjekker verdier i parameterlisten ***
 
 ```console
- $ grep [[:alnum:]] /sys/module/iwlwifi/parameters/* | cut -d '/' -f6
+$ grep [[:alnum:]] /sys/module/iwlwifi/parameters/* | cut -d '/' -f6
  grep: /sys/module/iwlwifi/parameters/enable_ini11n_disable:0
 amsdu_size:0
 bt_coex_active:Y
