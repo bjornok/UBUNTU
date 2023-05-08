@@ -112,6 +112,36 @@ parm:           disable_11be:Disable EHT capabilities (default: false) (bool
 ```
 
 
+NetworkManager WiFi Power Saving
+================================
 
+From gist: [jcberthon/networkmanager-wifi-powersave.md](https://gist.github.com/jcberthon/ea8cfe278998968ba7c5a95344bc8b55)
+
+NetworkManager supports WiFi powersaving but the function is rather undocumented. Standard value in Pop_OS 22.04 was `wifi.powersave = 3`
+I changed it to 2.
+
+```console
+$ ls /etc/NetworkManager/conf.d/
+10-globally-managed-devices.conf  10-ubuntu-fan.conf  default-wifi-powersave-on.conf
+$ cat /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+[connection]
+wifi.powersave = 3
+$ 
+```
+
+
+From the source code: wifi.powersave can have the following value:
+
+  - NM_SETTING_WIRELESS_POWERSAVE_DEFAULT (0): use the default value
+  - NM_SETTING_WIRELESS_POWERSAVE_IGNORE  (1): don't touch existing setting
+  - NM_SETTING_WIRELESS_POWERSAVE_DISABLE (2): disable powersave
+  - NM_SETTING_WIRELESS_POWERSAVE_ENABLE  (3): enable powersave
+
+Then I propose 2 files, only one of them needs to be put under `/etc/NetworkManager/conf.d/`.  
+One is forcing to disable powersaving, while the other one enable it.
+
+Once you have put the file in the right folder, simply restart NetworkManager:
+
+    sudo systemctl restart NetworkManager
 
 
