@@ -2,6 +2,9 @@
 
 BK: 2023-05-08 (fra Lauvlia 404)
 
+Pr dags dato, harjeg endret powersave fra 3 til 2 og installert iwd, slik atwlan0 ikke blir renamet. iwd servicen er disablet for øyeblikket.  Skal se om powersave fikset problemet. Ucode 72 er den som er lastet i kernel release 6.2
+
+
 * [Kernel.org - Linux Wireless (iwlwifi)](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi)
 * [Kernel.org - index : kernel/git/iwlwifi/linux-firmware.git](https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/linux-firmware.git/)
 
