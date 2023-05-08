@@ -75,7 +75,7 @@ Utdrag fra dmesg
 ```
 ### Gå via modprobe
 
-Sjekk output fra m̀odinfo iwlwifi`
+Sjekk output fra `$ m̀odinfo iwlwifi`
 
 ```console
 # snippets fra kommandoen 
@@ -112,6 +112,13 @@ parm:           disable_11ac:Disable VHT capabilities (default: false) (bool)
 parm:           remove_when_gone:Remove dev from PCIe bus if it is deemed inaccessible (default: false) (bool)
 parm:           disable_11ax:Disable HE capabilities (default: false) (bool)
 parm:           disable_11be:Disable EHT capabilities (default: false) (bool
+```
+
+***Du kan også resette driveren via modprobe***
+```console
+$ sudo modprobe -r iwlwifi
+$ sudo modprobe iwlwifi
+$ sudo dmesg
 ```
 
 ***Sjekker verdier i parameterlisten ***
