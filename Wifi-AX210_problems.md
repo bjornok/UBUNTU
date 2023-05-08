@@ -177,3 +177,22 @@ Once you have put the file in the right folder, simply restart NetworkManager:
     sudo systemctl restart NetworkManager
 
 
+Intel har skrevet en utility for å håndtere Wireless
+====================================================
+
+Sjekk [How to manage wireless connections using iwd on Linux](https://linuxconfig.org/how-to-manage-wireless-connections-using-iwd-on-linux)
+
+Installasjon
+```console
+$ sudo apt install iwd
+```
+Har installert iwd - som en konsekvens blir ikke **wlan0** endret til **wlp7s0** og jeg måtte reconnecte Wifi
+
+The iwd package provides:
+
+* The `iwd` daemon
+* The `iwctl` command line utility
+* The `iwmon` monitoring tool
+
+
+Note to self: *Skal avinstallere denne*
