@@ -13,7 +13,7 @@ sudo apt install microsoft-edge-dev
 ```
 
 ### Change /bin/sh to use /bin/bash and not /bin/dash.
-SAP DP Agent is run and configured using shell scripts.  These requires to invike classic 'sh', however on Ubuntu it points to /bin/dash which is not compatible. We have two options, a) to edit all shell scripts in catalog /usr/sap/dataprovagent and change from #!/bin/sh to #!/bin/bash or b) create a symlink to bash instead of dash.
+SAP DP Agent is run and configured using shell scripts.  These requires to invoke classic 'sh', however on Ubuntu it points to /bin/dash which is not compatible. We have two options, a) to edit all shell scripts in catalog /usr/sap/dataprovagent and change from #!/bin/sh to #!/bin/bash or b) create a symlink to bash instead of dash.
 
 ```
 user2@dbserver2:~$ cd /bin
