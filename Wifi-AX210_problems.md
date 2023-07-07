@@ -27,7 +27,7 @@ grep: /sys/module/iwlwifi/parameters/enable_ini: Operation not permitted
 /sys/module/iwlwifi/parameters/swcrypto:0
 /sys/module/iwlwifi/parameters/uapsd_disable:3
 ```
-
+Sjekk også [SOLVED Using the AX210 with Linux on the Framework Laptop](https://community.frame.work/t/solved-using-the-ax210-with-linux-on-the-framework-laptop/1844/51?page=2)
 
 BK: 2023-05-08 (fra Lauvlia 404)
 
