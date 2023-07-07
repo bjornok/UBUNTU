@@ -6,6 +6,8 @@ sudo nano /etc/modprobe.d/iwlwifi.conf
 
 options iwlwifi disable_11ax=Y
 ```
+Gjør søk på ```iwlwifi 0000:07:00.0: Error sending STATISTICS_CMD```
+
 
 This is the subject of a well-known bug report: [https://bugzilla.kernel.org/show_bug](https://bugzilla.kernel.org/show_bug.cgi?id=212371#c13)
 
