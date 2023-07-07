@@ -1,6 +1,11 @@
 ### All info samlet om hvordan jeg håndterer AX210 og dropouts
 
-BK:2023-07-07 - fortsatt problemer
+BK:2023-07-07 - fortsatt problemer - endret disable_11ax=Y
+```console
+sudo nano /etc/modprobe.d/iwlwifi.conf
+
+options iwlwifi disable_11ax=Y
+```
 
 ```console
 (base) bjorn@pop-os:~$ grep [[:alnum:]] /sys/module/iwl*/parameters/*
