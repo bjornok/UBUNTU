@@ -1,5 +1,29 @@
 ### All info samlet om hvordan jeg håndterer AX210 og dropouts
 
+BK:2023-07-07 - fortsatt problemer
+
+```console
+(base) bjorn@pop-os:~$ grep [[:alnum:]] /sys/module/iwl*/parameters/*
+/sys/module/iwlmvm/parameters/init_dbg:N
+/sys/module/iwlmvm/parameters/power_scheme:2
+/sys/module/iwlwifi/parameters/11n_disable:0
+/sys/module/iwlwifi/parameters/amsdu_size:0
+/sys/module/iwlwifi/parameters/bt_coex_active:Y
+/sys/module/iwlwifi/parameters/disable_11ac:N
+/sys/module/iwlwifi/parameters/disable_11ax:N
+/sys/module/iwlwifi/parameters/disable_11be:N
+grep: /sys/module/iwlwifi/parameters/enable_ini: Operation not permitted
+/sys/module/iwlwifi/parameters/fw_restart:Y
+/sys/module/iwlwifi/parameters/led_mode:0
+/sys/module/iwlwifi/parameters/nvm_file:(null)
+/sys/module/iwlwifi/parameters/power_level:0
+/sys/module/iwlwifi/parameters/power_save:N
+/sys/module/iwlwifi/parameters/remove_when_gone:N
+/sys/module/iwlwifi/parameters/swcrypto:0
+/sys/module/iwlwifi/parameters/uapsd_disable:3
+```
+
+
 BK: 2023-05-08 (fra Lauvlia 404)
 
 Pr dags dato, harjeg endret powersave fra 3 til 2 og installert iwd, slik atwlan0 ikke blir renamet. iwd servicen er disablet for øyeblikket.  Skal se om powersave fikset problemet. Ucode 72 er den som er lastet i kernel release 6.2
