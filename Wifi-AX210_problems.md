@@ -7,6 +7,16 @@ sudo nano /etc/modprobe.d/iwlwifi.conf
 options iwlwifi disable_11ax=Y
 ```
 
+This is the subject of a well-known bug report: [https://bugzilla.kernel.org/show_bug](https://bugzilla.kernel.org/show_bug.cgi?id=212371#c13)
+
+Let's try the suggested fix. From the terminal:
+
+`sudo mv /usr/lib/firmware/iwlwifi-ty-a0-gf-a0.pnvm  /usr/lib/firmware/iwlwifi-ty-a0-gf-a0.bak`
+
+Reboot and tell us if there is any improvement.
+
+EDIT: It appears that periodic updates to the package linux-firmware will install a new version of the offending file iwlwifi-ty-a0-gf-a0.pnvm and so this process will need to be repeated.
+
 ```console
 (base) bjorn@pop-os:~$ grep [[:alnum:]] /sys/module/iwl*/parameters/*
 /sys/module/iwlmvm/parameters/init_dbg:N
