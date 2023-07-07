@@ -11,7 +11,7 @@ Gjør søk på ```iwlwifi 0000:07:00.0: Error sending STATISTICS_CMD```
 
 This is the subject of a well-known bug report: [https://bugzilla.kernel.org/show_bug](https://bugzilla.kernel.org/show_bug.cgi?id=212371#c13)
 
-Let's try the suggested fix. From the terminal:
+Let's try the suggested fix. From the terminal: ------BK: Dette fungerer ikke - får ikke lastet iwlwifi når denne ikke er der. -----
 
 `sudo mv /usr/lib/firmware/iwlwifi-ty-a0-gf-a0.pnvm  /usr/lib/firmware/iwlwifi-ty-a0-gf-a0.bak`
 
