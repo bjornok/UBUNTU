@@ -37,6 +37,9 @@ sudo transactional-update install xf86-video-nv xf86-video-intel nano
 sudo reboot
 ```
 
+Link til info:
+https://support.huawei.com/enterprise/en/doc/EDOC1100212210/45139458/how-to-disable-the-nouveau-driver-for-different-linux-systems
+
 for å blackliste noveau driveren:
 * Create the `/etc/modprobe.d/blacklist-nouveau.conf` file and add the following information to the file:
 ```
