@@ -17,6 +17,7 @@ Portainer er et behagelig web-basert grensesnitt for å vedlikeholde og ha overs
 - `Stop` container
 - `Recreate` - du får da mulighet til [Re-pull image]
 
+Portainer er bygget slik at den oppdaterer seg selv inne i imaget - ikke behov for å bruke docker til det :-)
 
 ### Unifi controller
 
