@@ -17,7 +17,22 @@ Portainer er et behagelig web-basert grensesnitt for å vedlikeholde og ha overs
 - `Stop` container
 - `Recreate` - du får da mulighet til [Re-pull image]
 
-Portainer er bygget slik at den oppdaterer seg selv inne i imaget - ikke behov for å bruke docker til det :-)
+**Oppdatere portainer til nyeste image**
+
+Denne må gjøres med docker cli:
+```console
+docker stop portainer
+docker rm portainer
+docker pull portainer/portainer-ce:latest
+docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+``` 
+These docker run commands include opening port 8000 which is used for Edge Agent communication as included in our installation instructions. If you do not need this port open, you can remove it from the command.
+
+Starting from Portainer CE 2.9 and BE 2.10, HTTPS is enabled by default on port 9443. These instructions will configure Portainer to use 9443 for HTTPS and do not expose 9000 for HTTP. If you need to retain HTTP access, you can add:
+
+-p 9000:9000
+
+to your command. 
 
 ### Unifi controller
 
