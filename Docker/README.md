@@ -12,6 +12,11 @@ Med `sudo transactional-update pkg install docker-podman` får man docker cli i 
 
 Portainer er et behagelig web-basert grensesnitt for å vedlikeholde og ha oversikt over docker kjøremiljøet.
 
+**Oppdatere containere til nyeste image**
+- Velg container i grensesnittet
+- `Stop` container
+- `Recreate` - du får da mulighet til [Re-pull image]
+
 
 ### Unifi controller
 
