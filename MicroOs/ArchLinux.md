@@ -1,3 +1,20 @@
+# Arch Linux spesifics (distrobox)
+
+
+## Install yay
+
+yay is a utility to install from AUR. Use `yay` without sudo
+
+```console
+$ sudo pacman -S --needed base-devel git
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay         # step into cloned directory
+$ makepkg -si    # build and install yay
+```
+
+## Updating and installing
+
+Use `sudo -i` or remember to run pacman with sudo. 
 
 
 ```console
@@ -11,3 +28,9 @@ yay -S popcorntime # install popcorntime from AUR
 yay -Rns popcorntime # uninstall popcorntime and it's dependencies from the system
 yay -Syyyu # Update package list and upgrade if available including AUR packages
 ```
+
+## Reset keyring
+
+Remove or reset all the keys installed in your system by removing the `/etc/pacman.d/gnupg` directory (as root) and by 
+rerunning `pacman-key --init` followed by `pacman-key --populate` to re-add the default keys. 
+
