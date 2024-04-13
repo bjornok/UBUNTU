@@ -13,6 +13,29 @@ $ free -h
 $ sudo systemctl enable --now zramswap.service
 $ free -h # Should show swap enabled
 ```
+ 
+## Useful applications (from Flatpak)
+
+Podman is a powerful utility - and has similar functionality as Docker - runs Docker images and is a good way to add addiditionally functionality
+like a "Unifi controller" etc...
+
+- Podman-Desktop
+- Document Scanner
+- Document Viewer (needed to view pdf-files etc...)
+- Microsoft Edge
+- Flatseal (handling rights - give Firefox print rights)
+
+
+## Useful extensions to Gnome
+
+Using Extension Manager - tou will be able to customiuze the Desktop. Here are my favorites.
+
+- Bing Wallpaper
+- IP Finder
+- Apps Menu
+- Launch new instance
+- Workspace indicator
+
 
 ## Using Distrobox
 
