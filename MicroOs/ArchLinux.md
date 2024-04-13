@@ -14,6 +14,8 @@ $ makepkg -si    # build and install yay
 
 ## Updating and installing
 
+[pacman guide](https://kaosx.us/docs/pacman/)
+
 Use `sudo -i` or remember to run pacman with sudo. 
 
 
