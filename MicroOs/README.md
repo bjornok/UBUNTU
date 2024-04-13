@@ -12,6 +12,9 @@ $ reboot
 $ free -h
 $ sudo systemctl enable --now zramswap.service
 $ free -h # Should show swap enabled
+---
+$ sudo transactional-update pkg install neofetch htop
+$ reboot
 ```
  
 ## Useful applications (from Flatpak)
@@ -23,6 +26,8 @@ like a "Unifi controller" etc...
 - Document Scanner
 - Document Viewer (needed to view pdf-files etc...)
 - Microsoft Edge
+- Celluloid
+- OnlyOffice
 - Flatseal (handling rights - give Firefox print rights)
 
 
