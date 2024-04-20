@@ -11,5 +11,6 @@ mens podman er rootless.
 
  ## Dokumentasjon
  - [Podman troubleshooting](https://github.com/containers/podman/blob/main/troubleshooting.md#33-container-creates-a-file-that-is-not-owned-by-the-users-regular-uid)
+ - [Using volumes with rootless podman, explained](https://www.tutorialworks.com/podman-rootless-volumes/)
  - [Containers lifecycle explained 'docker'](https://k21academy.com/docker-kubernetes/docker-container-lifecycle-management/)
  - [Github -containers/podman-desktop ](https://github.com/containers/podman-desktop)
