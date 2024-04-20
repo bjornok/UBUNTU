@@ -10,5 +10,6 @@ mens podman er rootless.
 - Z tillater non-root container UID tilganger - ellers `Access denied`
 
  ## Dokumentasjon
- - [Containers lifecycle explained 'dokcer'](https://k21academy.com/docker-kubernetes/docker-container-lifecycle-management/)
+ - [Podman troubleshooting](https://github.com/containers/podman/blob/main/troubleshooting.md#33-container-creates-a-file-that-is-not-owned-by-the-users-regular-uid)
+ - [Containers lifecycle explained 'docker'](https://k21academy.com/docker-kubernetes/docker-container-lifecycle-management/)
  - [Github -containers/podman-desktop ](https://github.com/containers/podman-desktop)
