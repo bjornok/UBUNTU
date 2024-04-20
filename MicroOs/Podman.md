@@ -9,5 +9,5 @@ mens podman er rootless.
 - mapping av volumer `-v /path/to/host/volume/or/file:/path/in/container:Z`.
 - Z tillater non-root container UID tilganger - ellers `Access denied`
 
- 
-  
+ ## Dokumentasjon
+ - [Github -containers/podman-desktop ](https://github.com/containers/podman-desktop)
