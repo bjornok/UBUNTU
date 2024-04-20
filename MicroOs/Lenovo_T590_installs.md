@@ -6,18 +6,29 @@ Man må først finn skriveren i "Printers" applikasjonen. Deretter må det event
 
 ```console
 zypper search epson
-sudo transactional-update pkg install epson-inkjet-printer-escpr system-config-printer-common
+sudo transactional-update pkg install epson-inkjet-printer-escpr system-config-printer-common libcupsimage2
 sudo reboot
 ```
 
 link til epson oppdaterte drivere  - pakker - må legges på /root for å kunne installeres via shell
 https://download.ebz.epson.net/dsc/search/01/search/searchModule
 
+Cups nås i Browser på http://localhost:631
 
 ### Problemer med heng i Gnome pålogging
 
-DEt viser seg via `dmesg -HT` at nouveau driveren får timeout og dermed blir det heng i pålogging.  Kombinasjonen med noveau og Wayland er ikke god for eldre laptops.
-Denne PC har sekundært grafikkkort fra NVIDIA som heter GXM250 eller lign.
+Oppdatert 2024-04-20: Nouveau driverne er utdaterte - Nvidia shipper proprietære drivere som støtter MX250
+Detaljerte instruksjoner her: [SDB:NVIDIA drivers](https://en.opensuse.org/SDB:NVIDIA_drivers)
+
+NB! Les instruksjonene - det er flere ting å passe på!
+
+```console
+# transactional-update -i pkg install openSUSE-repos-NVIDIA
+# transactional-update -i pkg in nvidia-drivers-G06 nvidia-driver-G06-kmp-default nvidia-video-G06 nvidia-gl-G06 nvidia-compute-G06
+```
+
+Det viser seg via `dmesg -HT` at nouveau driveren får timeout og dermed blir det heng i pålogging.  Kombinasjonen med noveau og Wayland er ikke god.
+Denne PC har sekundært grafikkkort fra NVIDIA som heter MX250 og er egentlig et ganske nytt kort.
 
 ```console
 zypper search xf86-video 
