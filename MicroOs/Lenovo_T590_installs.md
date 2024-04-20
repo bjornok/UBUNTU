@@ -15,6 +15,19 @@ https://download.ebz.epson.net/dsc/search/01/search/searchModule
 
 Cups nås i Browser på http://localhost:631
 
+### Espon scanner install
+
+Trenger sane backend og autoconfig-profil for usb scannere. Gnome applikasjonen `Document Scanner`
+
+```console
+$ sudo transactional-update pkg install sane-backends sane-backends-autoconfig sane-airscan
+$ sudo reboot
+
+$ # Testing
+$ scanimage -L
+$ sane-find-scanner
+```
+
 ### Problemer med heng i Gnome pålogging
 
 Oppdatert 2024-04-20: Nouveau driverne er utdaterte - Nvidia shipper proprietære drivere som støtter MX250
