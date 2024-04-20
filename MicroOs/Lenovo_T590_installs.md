@@ -26,6 +26,8 @@ $ sudo reboot
 $ # Testing
 $ scanimage -L
 $ sane-find-scanner
+$ ls /dev/usb/
+$ sudo nano /etc/sane.d/epson.conf  # se linje for /dev/usb/scanner0
 ```
 Troubleshooting USB scanner: https://linux.die.net/man/5/sane-usb
 
