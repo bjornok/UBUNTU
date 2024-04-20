@@ -6,7 +6,7 @@ Man må først finn skriveren i "Printers" applikasjonen. Deretter må det event
 
 ```console
 zypper search epson
-sudo transactional-update pkg install epson-inkjet-printer-escpr system-config-printer-common libcupsimage2
+sudo transactional-update pkg install epson-inkjet-printer-escpr system-config-printer-common
 sudo reboot
 ```
 
