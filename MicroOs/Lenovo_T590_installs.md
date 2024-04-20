@@ -30,6 +30,7 @@ $ ls /dev/usb/
 $ sudo nano /etc/sane.d/epson.conf  # se linje for /dev/usb/scanner0
 ```
 Troubleshooting USB scanner: https://linux.die.net/man/5/sane-usb
+OpenSuse Wiki: https://en.opensuse.org/SDB:Configuring_Scanners
 
 
 ### Problemer med heng i Gnome pålogging
