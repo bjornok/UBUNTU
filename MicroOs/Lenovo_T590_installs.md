@@ -27,6 +27,8 @@ $ # Testing
 $ scanimage -L
 $ sane-find-scanner
 ```
+Troubleshooting USB scanner: https://linux.die.net/man/5/sane-usb
+
 
 ### Problemer med heng i Gnome pålogging
 
