@@ -1,5 +1,7 @@
 # Using Podman med Portainer
 
+Oppdatert 2024-04-20: Istedet for Portainer - bruk Podman-Desktop (Portainer er best mot Docker)
+
 Portainer er et kraftig og enkelt visuelt verktøy for å vedlikehlde containere.
 
 Utdrag er hentet fra denne artikkelen [How to deploy the Portainer container manager with Podman](https://www.techrepublic.com/article/deploy-portainer-with-podman/)
