@@ -1,5 +1,10 @@
 # Arch Linux spesifics (distrobox)
 
+## Create Arch Linux container 
+
+```console
+$ distrobox-create --name arch --image docker.io/library/archlinux:latest
+```
 
 ## Install yay
 
@@ -14,7 +19,8 @@ $ makepkg -si    # build and install yay
 
 ## Updating and installing
 
-[pacman guide](https://kaosx.us/docs/pacman/)
+- [pacman guide](https://kaosx.us/docs/pacman/)
+- [Distrobox – use Linux distributions in your terminal](https://www.linuxlinks.com/distrobox-linux-distributions/)
 
 Use `sudo -i` or remember to run pacman with sudo. 
 
