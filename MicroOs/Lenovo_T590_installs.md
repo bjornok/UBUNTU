@@ -36,6 +36,7 @@ OpenSuse Wiki: https://en.opensuse.org/SDB:Configuring_Scanners
 Prøv:
 ```console
 $ SANE_DEBUG_DLL=3 scanimage -L
+$ sudo sane-find-scanner -q
 ```
 Se: https://forums.linuxmint.com/viewtopic.php?t=298418
 
