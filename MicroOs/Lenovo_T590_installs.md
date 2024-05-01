@@ -33,6 +33,13 @@ Troubleshooting USB scanner: https://linux.die.net/man/5/sane-usb
 
 OpenSuse Wiki: https://en.opensuse.org/SDB:Configuring_Scanners
 
+Prøv:
+```console
+$ SANE_DEBUG_DLL=3 scanimage -L
+```
+Se: https://forums.linuxmint.com/viewtopic.php?t=298418
+
+
 
 ### Problemer med heng i Gnome pålogging
 
