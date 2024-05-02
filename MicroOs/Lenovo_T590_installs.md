@@ -17,7 +17,9 @@ Cups nås i Browser på http://localhost:631
 
 ### Espon scanner install
 
-Trenger sane backend og autoconfig-profil for usb scannere. Gnome applikasjonen `Document Scanner`
+Trenger sane backend og autoconfig-profil for usb scannere. Gnome applikasjonen `Document Scanner`for å 
+
+Epson ET-2750 bruker Airscan-protokollen og støttes av denne. MEN med lokalt tilknyttet USB - så må man konfigurere `ipp-usb` dvs IPP-over-USB for å få tak i den via escl. Se: https://github.com/alexpevzner/sane-airscan-unstable
 
 ```console
 $ sudo transactional-update pkg install sane-backends sane-backends-autoconfig sane-airscan
