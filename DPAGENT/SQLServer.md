@@ -25,5 +25,10 @@ Using `-C` to trust self-signed certificate
 mssql@sql1:/$ /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P <some_password_here> -C
 ```
 
-
+From inside container - to install Pubs database.
+```console
+cd /var/opt/mssql
+wget https://github.com/microsoft/sql-server-samples/raw/refs/heads/master/samples/databases/northwind-pubs/instpubs.sql
+/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P <some_password_here> -C -i instpubs.sql
+```
 
