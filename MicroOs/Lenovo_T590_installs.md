@@ -2,6 +2,9 @@
 
 ### Epson printer install
 
+Oppdatert 2024-12-20 - det mest elegante er å bruke skriveren i Wifi.  Da slipper man `ipp-usb` som er en Proxy for IPP printing til USB
+porten. Denne skaper mer problemer enn den løser.
+
 Man må først finn skriveren i "Printers" applikasjonen. Deretter må det eventuelt installeres driverpakke for Epson skrivere om den ikke støttes automatisk.
 
 ```console
