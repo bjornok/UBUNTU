@@ -94,7 +94,7 @@ sudo transactional-update initrd
 sudo reboot
 ```
 
-Tilslutt - ved pålogging, velg tannhjulet og velg `Gnome on Xorg`
+Oppdatert 2024-12-20 --> Nå fungerer Gnome kun på Wayland.  Tilslutt - ved pålogging, velg tannhjulet og velg `Gnome on Xorg`
 
 
 
